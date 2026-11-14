@@ -50,7 +50,7 @@ export default function PageTeam3() {
 									<div className="zoom-img rounded-4">
 										<img className="img-fluid w-100" src="/assets/imgs/team-7/portrait-1.png" alt="infinia" />
 									</div>
-									<Link href="#" className="card-team text-start rounded-4 position-absolute bottom-0 start-0 end-0 z-1 p-4">
+									<Link href="/team/michael-anderson" className="card-team text-start rounded-4 position-absolute bottom-0 start-0 end-0 z-1 p-4">
 										<div className="position-relative z-1">
 											<h6 className="text-white">Michael Anderson</h6>
 											<div className="d-flex">
@@ -72,9 +72,9 @@ export default function PageTeam3() {
 									<div className="zoom-img rounded-4">
 										<img className="img-fluid w-100" src="/assets/imgs/team-7/portrait-2.png" alt="infinia" />
 									</div>
-									<Link href="#" className="card-team text-start rounded-4 position-absolute bottom-0 start-0 end-0 z-1 p-4">
+									<Link href="/team/daniel-martinez" className="card-team text-start rounded-4 position-absolute bottom-0 start-0 end-0 z-1 p-4">
 										<div className="position-relative z-1">
-											<h6 className="text-white">Strategy Development</h6>
+											<h6 className="text-white">Daniel Martinez</h6>
 											<div className="d-flex">
 												<span className="fs-7 text-white me-auto">Software Engineer</span>
 												<div className="arrow-icon bg-white icon-shape icon-sm rounded-circle">
@@ -94,7 +94,7 @@ export default function PageTeam3() {
 									<div className="zoom-img rounded-4">
 										<img className="img-fluid w-100" src="/assets/imgs/team-7/portrait-3.png" alt="infinia" />
 									</div>
-									<Link href="#" className="card-team text-start rounded-4 position-absolute bottom-0 start-0 end-0 z-1 p-4">
+									<Link href="/team/sarah-brown" className="card-team text-start rounded-4 position-absolute bottom-0 start-0 end-0 z-1 p-4">
 										<div className="position-relative z-1">
 											<h6 className="text-white">Sarah Brown</h6>
 											<div className="d-flex">
@@ -116,7 +116,7 @@ export default function PageTeam3() {
 									<div className="zoom-img rounded-4">
 										<img className="img-fluid w-100" src="/assets/imgs/team-7/portrait-4.png" alt="infinia" />
 									</div>
-									<Link href="#" className="card-team text-start rounded-4 position-absolute bottom-0 start-0 end-0 z-1 p-4">
+									<Link href="/team/david-clark" className="card-team text-start rounded-4 position-absolute bottom-0 start-0 end-0 z-1 p-4">
 										<div className="position-relative z-1">
 											<h6 className="text-white">David Clark </h6>
 											<div className="d-flex">
@@ -138,7 +138,7 @@ export default function PageTeam3() {
 									<div className="zoom-img rounded-4">
 										<img className="img-fluid w-100" src="/assets/imgs/team-7/portrait-5.png" alt="infinia" />
 									</div>
-									<Link href="#" className="card-team text-start rounded-4 position-absolute bottom-0 start-0 end-0 z-1 p-4">
+									<Link href="/team/jessica-carter" className="card-team text-start rounded-4 position-absolute bottom-0 start-0 end-0 z-1 p-4">
 										<div className="position-relative z-1">
 											<h6 className="text-white">Jessica Carter</h6>
 											<div className="d-flex">
@@ -160,7 +160,7 @@ export default function PageTeam3() {
 									<div className="zoom-img rounded-4">
 										<img className="img-fluid w-100" src="/assets/imgs/team-7/portrait-6.png" alt="infinia" />
 									</div>
-									<Link href="#" className="card-team text-start rounded-4 position-absolute bottom-0 start-0 end-0 z-1 p-4">
+									<Link href="/team/lauren-graham" className="card-team text-start rounded-4 position-absolute bottom-0 start-0 end-0 z-1 p-4">
 										<div className="position-relative z-1">
 											<h6 className="text-white">Lauren Graham</h6>
 											<div className="d-flex">
@@ -182,7 +182,7 @@ export default function PageTeam3() {
 									<div className="zoom-img rounded-4">
 										<img className="img-fluid w-100" src="/assets/imgs/team-7/portrait-7.png" alt="infinia" />
 									</div>
-									<Link href="#" className="card-team text-start rounded-4 position-absolute bottom-0 start-0 end-0 z-1 p-4">
+									<Link href="/team/james-bennett" className="card-team text-start rounded-4 position-absolute bottom-0 start-0 end-0 z-1 p-4">
 										<div className="position-relative z-1">
 											<h6 className="text-white">James Bennett</h6>
 											<div className="d-flex">
@@ -204,7 +204,7 @@ export default function PageTeam3() {
 									<div className="zoom-img rounded-4">
 										<img className="img-fluid w-100" src="/assets/imgs/team-7/portrait-8.png" alt="infinia" />
 									</div>
-									<Link href="#" className="card-team text-start rounded-4 position-absolute bottom-0 start-0 end-0 z-1 p-4">
+									<Link href="/team/william-foster" className="card-team text-start rounded-4 position-absolute bottom-0 start-0 end-0 z-1 p-4">
 										<div className="position-relative z-1">
 											<h6 className="text-white">William Foster</h6>
 											<div className="d-flex">

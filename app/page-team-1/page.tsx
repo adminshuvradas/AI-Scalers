@@ -28,7 +28,7 @@ export default function PageTeam1() {
 									<div className="zoom-img rounded-3">
 										<img className="img-fluid w-100" src="/assets/imgs/team-1/avatar-1.png" alt="infinia" />
 									</div>
-									<Link href="#" className="card-team text-start rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
+									<Link href="/team/michael-anderson" className="card-team text-start rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
 										<h6>Michael Anderson</h6>
 										<div className="d-flex">
 											<span className="fs-6 text-600 me-auto">Co-Founder</span>
@@ -44,8 +44,8 @@ export default function PageTeam1() {
 									<div className="zoom-img rounded-3">
 										<img className="img-fluid w-100" src="/assets/imgs/team-1/avatar-2.png" alt="infinia" />
 									</div>
-									<Link href="#" className="card-team text-start rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
-										<h6>Strategy Development</h6>
+									<Link href="/team/daniel-martinez" className="card-team text-start rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
+										<h6>Daniel Martinez</h6>
 										<div className="d-flex">
 											<span className="fs-6 text-600 me-auto">Software Engineer</span>
 											<svg xmlns="http://www.w3.org/2000/svg" width={24} height={14} viewBox="0 0 24 14" fill="#007BFF">
@@ -60,7 +60,7 @@ export default function PageTeam1() {
 									<div className="zoom-img rounded-3">
 										<img className="img-fluid w-100" src="/assets/imgs/team-1/avatar-3.png" alt="infinia" />
 									</div>
-									<Link href="#" className="card-team text-start rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
+									<Link href="/team/sarah-brown" className="card-team text-start rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
 										<h6>Sarah Brown</h6>
 										<div className="d-flex">
 											<span className="fs-6 text-600 me-auto">Product Manager</span>
@@ -76,7 +76,7 @@ export default function PageTeam1() {
 									<div className="zoom-img rounded-3">
 										<img className="img-fluid w-100" src="/assets/imgs/team-1/avatar-4.png" alt="infinia" />
 									</div>
-									<Link href="#" className="card-team text-start rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
+									<Link href="/team/david-clark" className="card-team text-start rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
 										<h6>David Clark </h6>
 										<div className="d-flex">
 											<span className="fs-6 text-600 me-auto">UX/UI Designer</span>
@@ -92,7 +92,7 @@ export default function PageTeam1() {
 									<div className="zoom-img rounded-3">
 										<img className="img-fluid w-100" src="/assets/imgs/team-1/avatar-5.png" alt="infinia" />
 									</div>
-									<Link href="#" className="card-team text-start rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
+									<Link href="/team/jessica-carter" className="card-team text-start rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
 										<h6>Jessica Carter</h6>
 										<div className="d-flex">
 											<span className="fs-6 text-600 me-auto">DevOps Engineer</span>
@@ -108,7 +108,7 @@ export default function PageTeam1() {
 									<div className="zoom-img rounded-3">
 										<img className="img-fluid w-100" src="/assets/imgs/team-1/avatar-6.png" alt="infinia" />
 									</div>
-									<Link href="#" className="card-team text-start rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
+									<Link href="/team/lauren-graham" className="card-team text-start rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
 										<h6>Lauren Graham</h6>
 										<div className="d-flex">
 											<span className="fs-6 text-600 me-auto">Data Analyst</span>
@@ -124,7 +124,7 @@ export default function PageTeam1() {
 									<div className="zoom-img rounded-3">
 										<img className="img-fluid w-100" src="/assets/imgs/team-1/avatar-7.png" alt="infinia" />
 									</div>
-									<Link href="#" className="card-team text-start rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
+									<Link href="/team/james-bennett" className="card-team text-start rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
 										<h6>James Bennett</h6>
 										<div className="d-flex">
 											<span className="fs-6 text-600 me-auto">Sales Executive</span>
@@ -140,7 +140,7 @@ export default function PageTeam1() {
 									<div className="zoom-img rounded-3">
 										<img className="img-fluid w-100" src="/assets/imgs/team-1/avatar-8.png" alt="infinia" />
 									</div>
-									<Link href="#" className="card-team text-start rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
+									<Link href="/team/william-foster" className="card-team text-start rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
 										<h6>William Foster</h6>
 										<div className="d-flex">
 											<span className="fs-6 text-600 me-auto">Marketing Specialist</span>

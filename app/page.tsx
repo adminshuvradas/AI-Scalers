@@ -1,34 +1,33 @@
+import Blog3 from "@/components/sections/Blog3"
+import Cta2 from "@/components/sections/Cta2"
+import Cta3 from "@/components/sections/Cta3"
+import Faqs2 from "@/components/sections/Faqs2"
+import Features6 from "@/components/sections/Features6"
+import Features7 from "@/components/sections/Features7"
+import Hero3 from "@/components/sections/Hero3"
+import LogoCloud3 from "@/components/sections/LogoCloud3"
+import Newsletter2 from "@/components/sections/Newsletter2"
+import Pricing3 from "@/components/sections/Pricing3"
+import Services2 from "@/components/sections/Services2"
+import Static2 from "@/components/sections/Static2"
+
 import Layout from "@/components/layout/Layout"
-import Blog1 from "@/components/sections/Blog1"
-import Features1 from "@/components/sections/Features1"
-import Features2 from "@/components/sections/Features2"
-import Features3 from "@/components/sections/Features3"
-import Hero1 from "@/components/sections/Hero1"
-import LogoCloud1 from "@/components/sections/LogoCloud1"
-import Newsletter1 from "@/components/sections/Newsletter1"
-import Pricing1 from "@/components/sections/Pricing1"
-import Services1 from "@/components/sections/Services1"
-import Team1 from "@/components/sections/Team1"
-import Testimonial1 from "@/components/sections/Testimonial1"
+
 export default function Home() {
-
-	return (
-		<>
-
-			<Layout headerStyle={1} footerStyle={1}>
-				<Hero1 />
-				<LogoCloud1 />
-				<Features1 />
-				<Features2 />
-				<Features3 />
-				<Services1 />
-				<Team1 />
-				<Pricing1 />
-				<Testimonial1 />
-				<Blog1 />
-				<Newsletter1 />
-
-			</Layout>
-		</>
-	)
+  return (
+    <Layout headerStyle={3} footerStyle={2}>
+      <Hero3 />
+      <LogoCloud3 />
+      <Services2 />
+      <Cta2 />
+      <Static2 />
+      <Cta3 />
+      <Features6 />
+      <Features7 />
+      <Pricing3 />
+      <Faqs2 />
+      <Blog3 />
+      <Newsletter2 />
+    </Layout>
+  )
 }

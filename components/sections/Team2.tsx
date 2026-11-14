@@ -34,10 +34,10 @@ export default function Team2() {
 										<div className="zoom-img rounded-3">
 											<img className="img-fluid w-100" src="/assets/imgs/team-2/avatar-1.png" alt="infinia" />
 										</div>
-										<Link href="#" className="card-team rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
-											<h6>Strategy Development</h6>
+										<Link href="/team/michael-anderson" className="card-team rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
+											<h6>Michael Anderson</h6>
 											<div className="d-flex">
-												<span className="fs-6 text-600 me-auto">Software Engineer</span>
+												<span className="fs-6 text-600 me-auto">Co-Founder</span>
 												<svg xmlns="http://www.w3.org/2000/svg" width={24} height={14} viewBox="0 0 24 14" fill="#007BFF">
 													<path className="fill-primary" d="M17.4177 0.417969L16.3487 1.48705L21.1059 6.24429H0V7.75621H21.1059L16.3487 12.5134L17.4177 13.5825L24 7.0002L17.4177 0.417969Z" fill="white" />
 												</svg>
@@ -50,8 +50,8 @@ export default function Team2() {
 										<div className="zoom-img rounded-3">
 											<img className="img-fluid w-100" src="/assets/imgs/team-2/avatar-2.png" alt="infinia" />
 										</div>
-										<Link href="#" className="card-team rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
-											<h6>Strategy Development</h6>
+										<Link href="/team/daniel-martinez" className="card-team rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
+											<h6>Daniel Martinez</h6>
 											<div className="d-flex">
 												<span className="fs-6 text-600 me-auto">Software Engineer</span>
 												<svg xmlns="http://www.w3.org/2000/svg" width={24} height={14} viewBox="0 0 24 14" fill="#007BFF">
@@ -70,10 +70,10 @@ export default function Team2() {
 								<div className="zoom-img rounded-3">
 									<img className="img-fluid w-100" src="/assets/imgs/team-2/avatar-3.png" alt="infinia" />
 								</div>
-								<Link href="#" className="card-team rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
-									<h6>Strategy Development</h6>
+								<Link href="/team/sarah-brown" className="card-team rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
+									<h6>Sarah Brown</h6>
 									<div className="d-flex">
-										<span className="fs-6 text-600 me-auto">Software Engineer</span>
+										<span className="fs-6 text-600 me-auto">Product Manager</span>
 										<svg xmlns="http://www.w3.org/2000/svg" width={24} height={14} viewBox="0 0 24 14" fill="#007BFF">
 											<path className="fill-primary" d="M17.4177 0.417969L16.3487 1.48705L21.1059 6.24429H0V7.75621H21.1059L16.3487 12.5134L17.4177 13.5825L24 7.0002L17.4177 0.417969Z" fill="white" />
 										</svg>
@@ -86,10 +86,10 @@ export default function Team2() {
 								<div className="zoom-img rounded-3">
 									<img className="img-fluid w-100" src="/assets/imgs/team-2/avatar-4.png" alt="infinia" />
 								</div>
-								<Link href="#" className="card-team rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
-									<h6>Strategy Development</h6>
+								<Link href="/team/david-clark" className="card-team rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
+									<h6>David Clark</h6>
 									<div className="d-flex">
-										<span className="fs-6 text-600 me-auto">Software Engineer</span>
+										<span className="fs-6 text-600 me-auto">UX/UI Designer</span>
 										<svg xmlns="http://www.w3.org/2000/svg" width={24} height={14} viewBox="0 0 24 14" fill="#007BFF">
 											<path className="fill-primary" d="M17.4177 0.417969L16.3487 1.48705L21.1059 6.24429H0V7.75621H21.1059L16.3487 12.5134L17.4177 13.5825L24 7.0002L17.4177 0.417969Z" fill="white" />
 										</svg>
@@ -102,10 +102,10 @@ export default function Team2() {
 								<div className="zoom-img rounded-3">
 									<img className="img-fluid w-100" src="/assets/imgs/team-2/avatar-5.png" alt="infinia" />
 								</div>
-								<Link href="#" className="card-team rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
-									<h6>Strategy Development</h6>
+								<Link href="/team/jessica-carter" className="card-team rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
+									<h6>Jessica Carter</h6>
 									<div className="d-flex">
-										<span className="fs-6 text-600 me-auto">Software Engineer</span>
+										<span className="fs-6 text-600 me-auto">DevOps Engineer</span>
 										<svg xmlns="http://www.w3.org/2000/svg" width={24} height={14} viewBox="0 0 24 14" fill="#007BFF">
 											<path className="fill-primary" d="M17.4177 0.417969L16.3487 1.48705L21.1059 6.24429H0V7.75621H21.1059L16.3487 12.5134L17.4177 13.5825L24 7.0002L17.4177 0.417969Z" fill="white" />
 										</svg>
@@ -118,10 +118,10 @@ export default function Team2() {
 								<div className="zoom-img rounded-3">
 									<img className="img-fluid w-100" src="/assets/imgs/team-2/avatar-6.png" alt="infinia" />
 								</div>
-								<Link href="#" className="card-team rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
-									<h6>Strategy Development</h6>
+								<Link href="/team/lauren-graham" className="card-team rounded-3 position-absolute bottom-0 start-0 end-0 z-1 backdrop-filter w-auto p-4 m-3 hover-up">
+									<h6>Lauren Graham</h6>
 									<div className="d-flex">
-										<span className="fs-6 text-600 me-auto">Software Engineer</span>
+										<span className="fs-6 text-600 me-auto">Data Analyst</span>
 										<svg xmlns="http://www.w3.org/2000/svg" width={24} height={14} viewBox="0 0 24 14" fill="#007BFF">
 											<path className="fill-primary" d="M17.4177 0.417969L16.3487 1.48705L21.1059 6.24429H0V7.75621H21.1059L16.3487 12.5134L17.4177 13.5825L24 7.0002L17.4177 0.417969Z" fill="white" />
 										</svg>
