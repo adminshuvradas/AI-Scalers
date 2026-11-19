@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import BouncingBlobsWrapper from "@/components/elements/BouncingBlobsWrapper";
 import Layout from "@/components/layout/Layout";
 import ServiceQuestions from "@/components/sections/ServiceQuestions";
+import ServiceContactForm from "@/components/sections/ServiceContactForm";
 import { services } from "@/util/services";
 
 interface ServicePageProps {
@@ -101,14 +102,14 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 							<p className="mb-3">{service.description}</p>
 							<p className="mb-0">{service.details}</p>
 
-							<h5 className="pt-4 border-top mb-3 mt-5">
+							<h5 className="pt-4 border-top mb-4 mt-5">
 								How we support your business
 							</h5>
-							<div className="row mt-4">
+							<div className="row g-3">
 								{service.highlights.map((highlight, index) => (
-									<div className="col-md-4 mb-4" key={highlight}>
-										<div className="d-flex align-items-start">
-											<div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3 flex-shrink-0">
+									<div className="col-md-4" key={highlight}>
+										<div className="h-100 bg-white border rounded-3 p-4 hover-up">
+											<div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3 mb-4">
 												<div className="icon">
 													<img
 														src={`/assets/imgs/services-details/icon-${index + 5}.svg`}
@@ -116,10 +117,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 													/>
 												</div>
 											</div>
-											<div className="ps-4">
-												<h6>{highlight}</h6>
-												<p className="mb-0">{service.description}</p>
-											</div>
+											<h6 className="mb-0 lh-base">{highlight}</h6>
 										</div>
 									</div>
 								))}
@@ -230,82 +228,10 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 							<div className="row">
 								<div className="col-lg-6 ps-lg-0 pb-5 pb-lg-0">
 									<h4>Leave a message</h4>
-									<form action="#">
-										<div className="row mt-5">
-											<div className="col-md-6">
-												<input
-													type="text"
-													className="form-control rounded-2"
-													name="name"
-													placeholder="Your name *"
-													aria-label="Your name"
-													required
-												/>
-											</div>
-											<div className="col-md-6">
-												<input
-													type="email"
-													className="form-control rounded-2 mt-4 mt-md-0"
-													name="email"
-													placeholder="Email address *"
-													aria-label="Email address"
-													required
-												/>
-											</div>
-											<div className="col-md-6">
-												<input
-													type="tel"
-													className="form-control rounded-2 mt-4"
-													name="phone"
-													placeholder="Phone"
-													aria-label="Phone"
-												/>
-											</div>
-											<div className="col-md-6">
-												<input
-													type="text"
-													className="form-control rounded-2 mt-4"
-													name="subject"
-													placeholder="Subject"
-													aria-label="Subject"
-													defaultValue={service.title}
-												/>
-											</div>
-											<div className="col-12">
-												<textarea
-													className="form-control rounded-2 mt-4 pb-10"
-													name="message"
-													placeholder="Describe your project"
-													aria-label="Describe your project"
-													required
-												/>
-											</div>
-											<div className="col-12">
-												<button
-													type="submit"
-													className="btn btn-primary hover-up mt-4"
-												>
-													Send Message
-													<svg
-														className="ms-2"
-														xmlns="http://www.w3.org/2000/svg"
-														width={24}
-														height={24}
-														viewBox="0 0 24 24"
-														fill="none"
-														aria-hidden="true"
-													>
-														<path
-															className="stroke-white"
-															d="M21.1059 12.2562H0.5V11.7443H21.1059H22.313L21.4594 10.8907L17.0558 6.48705L17.4177 6.12508L23.2929 12.0002L17.4177 17.8754L17.0558 17.5134L21.4594 13.1098L22.313 12.2562H21.1059Z"
-															fill="black"
-															stroke="white"
-														/>
-													</svg>
-												</button>
-											</div>
-										</div>
-									</form>
+									<ServiceContactForm
+										serviceTitle={service.title}
+										messageRequired
+									/>
 								</div>
 								<div className="col-lg-6">
 									<div className="ps-lg-6">

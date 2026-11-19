@@ -1,6 +1,7 @@
 import BouncingBlobsWrapper from "@/components/elements/BouncingBlobsWrapper";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
+import { CONTACT_FORM_ACTION } from "@/util/contact";
 export default function PageContact3() {
     return (
         <>
@@ -47,7 +48,7 @@ export default function PageContact3() {
                                 <div className="row">
                                     <div className="col-lg-6 ps-lg-0 pb-5 pb-lg-0">
                                         <h4>Leave a message</h4>
-                                        <form action="#">
+                                        <form action={CONTACT_FORM_ACTION} method="post" encType="text/plain">
                                             <div className="row mt-5">
                                                 <div className="col-md-6">
                                                     <div className="input-group rounded-1 d-flex align-items-center">
@@ -64,21 +65,21 @@ export default function PageContact3() {
                                                     <div className="input-group rounded-1 d-flex align-items-center mt-4 mt-md-0">
                                                         <div className="icon-input border border-end-0 rounded-2 rounded-end-0 ps-3">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none">
-                                                                <path className="stroke-dark" d="M8.89286 4.75H6.06818C5.34017 4.75 4.75 5.34017 4.75 6.06818C4.75 13.3483 10.6517 19.25 17.9318 19.25C18.6598 19.25 19.25 18.6598 19.25 17.9318V15.1071L16.1429 13.0357L14.5317 14.6468C14.2519 14.9267 13.8337 15.0137 13.4821 14.8321C12.8858 14.524 11.9181 13.9452 10.9643 13.0357C9.98768 12.1045 9.41548 11.1011 9.12829 10.494C8.96734 10.1537 9.06052 9.76091 9.32669 9.49474L10.9643 7.85714L8.89286 4.75Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                                <path className="stroke-dark" d="M4.75 7.75C4.75 6.64543 5.64543 5.75 6.75 5.75H17.25C18.3546 5.75 19.25 6.64543 19.25 7.75V16.25C19.25 17.3546 18.3546 18.25 17.25 18.25H6.75C5.64543 18.25 4.75 17.3546 4.75 16.25V7.75Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                                <path className="stroke-dark" d="M5.5 6.5L12 12.25L18.5 6.5" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                             </svg>
                                                         </div>
-                                                        <input type="text" className="form-control ms-0 border rounded-2 rounded-start-0 border-start-0" name="name" placeholder="info@" aria-label="email" />
+                                                        <input type="email" className="form-control ms-0 border rounded-2 rounded-start-0 border-start-0" name="email" placeholder="info@" aria-label="email" />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6">
                                                     <div className="input-group rounded-1 d-flex align-items-center mt-4">
                                                         <div className="icon-input border border-end-0 rounded-2 rounded-end-0 ps-3">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none">
-                                                                <path className="stroke-dark" d="M4.75 7.75C4.75 6.64543 5.64543 5.75 6.75 5.75H17.25C18.3546 5.75 19.25 6.64543 19.25 7.75V16.25C19.25 17.3546 18.3546 18.25 17.25 18.25H6.75C5.64543 18.25 4.75 17.3546 4.75 16.25V7.75Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                                                <path className="stroke-dark" d="M5.5 6.5L12 12.25L18.5 6.5" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                                <path className="stroke-dark" d="M8.89286 4.75H6.06818C5.34017 4.75 4.75 5.34017 4.75 6.06818C4.75 13.3483 10.6517 19.25 17.9318 19.25C18.6598 19.25 19.25 18.6598 19.25 17.9318V15.1071L16.1429 13.0357L14.5317 14.6468C14.2519 14.9267 13.8337 15.0137 13.4821 14.8321C12.8858 14.524 11.9181 13.9452 10.9643 13.0357C9.98768 12.1045 9.41548 11.1011 9.12829 10.494C8.96734 10.1537 9.06052 9.76091 9.32669 9.49474L10.9643 7.85714L8.89286 4.75Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                             </svg>
                                                         </div>
-                                                        <input type="text" className="form-control ms-0 border rounded-2 rounded-start-0 border-start-0" name="name" placeholder="Phone" aria-label="phone" />
+                                                        <input type="tel" className="form-control ms-0 border rounded-2 rounded-start-0 border-start-0" name="phone" placeholder="Phone" aria-label="phone" />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6">
@@ -89,7 +90,7 @@ export default function PageContact3() {
                                                                 <path className="stroke-dark" d="M9.75 15.749C9.75 14.6444 10.6455 13.749 11.75 13.749H12.25C13.3546 13.749 14.25 14.6444 14.25 15.749V19.249H9.75V15.749Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                             </svg>
                                                         </div>
-                                                        <input type="text" className="form-control ms-0 border rounded-2 rounded-start-0 border-start-0" name="name" placeholder="Subject" aria-label="subject" />
+                                                        <input type="text" className="form-control ms-0 border rounded-2 rounded-start-0 border-start-0" name="subject" placeholder="Subject" aria-label="subject" />
                                                     </div>
                                                 </div>
                                                 <div className="col-12">
@@ -104,7 +105,7 @@ export default function PageContact3() {
                                                                 />
                                                             </svg>
                                                         </div>
-                                                        <textarea className="form-control border border-start-0 ms-0 rounded-start-0 rounded-1 pb-10" name="name" placeholder="Describe Your Project in Short" aria-label="With textarea" />
+                                                        <textarea className="form-control border border-start-0 ms-0 rounded-start-0 rounded-1 pb-10" name="message" placeholder="Describe Your Project in Short" aria-label="With textarea" />
                                                     </div>
                                                 </div>
                                                 <div className="col-12">
@@ -235,11 +236,6 @@ export default function PageContact3() {
                         </div>
                     </div>
                 </section>
-                <div className="container pb-120">
-                    <div className="contact-map w-100">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.332792000835!2d144.96011341744386!3d-37.805673299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sbd!4v1685027435635!5m2!1sen!2sbd" allowFullScreen loading="lazy" />
-                    </div>
-                </div>
             </Layout>
         </>
     );
