@@ -14244,13 +14244,6 @@ input[type="range"]:focus::-moz-range-thumb {
     box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.1);
 }
 
-.section-contact-1 {
-    background-image: url("../imgs/contact-1/img-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 .section-page-header .bouncing-blobs-glass {
     background-color: rgba(163, 140, 255, 0.1);
 }

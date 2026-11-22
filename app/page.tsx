@@ -15,7 +15,7 @@ import Layout from "@/components/layout/Layout"
 
 export default function Home() {
   return (
-    <Layout headerStyle={3} footerStyle={2}>
+    <Layout footerStyle={2} topBarColor="#6d4df2">
       <Hero3 />
       <LogoCloud3 />
       <Services2 />

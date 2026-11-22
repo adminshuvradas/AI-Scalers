@@ -33,7 +33,6 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }: any) {
 										<li><Link className="active" href="/">Home</Link></li>
 										<li><Link href="/about-us">About Us</Link></li>
 										<li><Link href="/services">Services</Link></li>
-										<li><Link href="/team">Team</Link></li>
 										<li className={`has-children ${isAccordion === 5 ? "active" : ""}`}>
 											<span className="menu-expand" onClick={() => handleAccordion(5)}>
 												<i className="arrow-small-down"></i>

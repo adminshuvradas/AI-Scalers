@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Menu() {
+export default function Menu({ hidePagesDropdown = false }: { hidePagesDropdown?: boolean }) {
   return (
     <>
       <div className="d-none d-lg-flex">
@@ -29,14 +29,6 @@ export default function Menu() {
           <li className="nav-item">
             <Link
               className="nav-link fw-bold d-flex align-items-center"
-              href="/team"
-            >
-              Team
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              className="nav-link fw-bold d-flex align-items-center"
               href="/blog"
             >
               Blog
@@ -50,7 +42,8 @@ export default function Menu() {
               Contact
             </Link>
           </li>
-          <li className="nav-item dropdown has-mega-menu">
+          {!hidePagesDropdown && (
+            <li className="nav-item dropdown has-mega-menu">
             <Link
               className="nav-link fw-bold d-flex align-items-center"
               href="#"
@@ -516,6 +509,7 @@ export default function Menu() {
               <div className="ellipse-rotate-primary-sm position-absolute top-0 end-0 translate-middle-y z-0" />
             </div>
           </li>
+          )}
         </ul>
       </div>
     </>

@@ -3,8 +3,8 @@ import BouncingBlobsWrapper from "@/components/elements/BouncingBlobsWrapper";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import ServiceCards from "@/components/sections/ServiceCards";
-import ServiceContactForm from "@/components/sections/ServiceContactForm";
 import CountUp from "react-countup";
+import Newsletter1 from "@/components/sections/Newsletter1";
 export default function PageServices2() {
     return (
         <>
@@ -313,77 +313,7 @@ export default function PageServices2() {
                         <img src="/assets/imgs/testimonial-1/bg-line.png" alt="infinia" />
                     </div>
                 </section>
-                {/* Contact 2*/}
-                <section className="section-contact-2 position-relative section-padding bg-5">
-                    <div className="container position-relative z-1">
-                        <div className="text-center">
-                            <h5 className="ds-5 mt-3 mb-3">
-                                Thinking about a project? <br className="d-md-block d-none" />
-                                Get in touch with us.
-                            </h5>
-                            <span className="fs-5 fw-medium">
-                                Connect with Us Today through the Details Below or Fill <br className="d-md-block d-none" />
-                                Out the Form for a Prompt Response
-                            </span>
-                        </div>
-                        <div className="row mt-8">
-                            <div className="col-lg-10 mx-lg-auto">
-                                <div className="row">
-                                    <div className="col-lg-6 ps-lg-0 pb-5 pb-lg-0">
-                                        <h4>Leave a message</h4>
-                                        <ServiceContactForm />
-                                    </div>
-                                    <div className="col-lg-6">
-                                        <div className="ps-lg-6">
-                                            <h6>Chat with us</h6>
-                                            <p className="text-500">The support team is always available 24/7</p>
-                                            <div className="d-flex mb-2">
-                                                <img src="/assets/imgs/contact-2/icon-1.svg" alt="infinia" />
-                                                <Link className="ms-2 text-decoration-underline text-900 fs-7" href="#">
-                                                    Chat via Whatsapp
-                                                </Link>
-                                            </div>
-                                            <div className="d-flex mb-2">
-                                                <img src="/assets/imgs/contact-2/icon-2.svg" alt="infinia" />
-                                                <Link className="ms-2 text-decoration-underline text-900 fs-7" href="#">
-                                                    Chat via Viber
-                                                </Link>
-                                            </div>
-                                            <div className="d-flex mb-2 mb-5">
-                                                <img src="/assets/imgs/contact-2/icon-3.svg" alt="infinia" />
-                                                <Link className="ms-2 text-decoration-underline text-900 fs-7" href="#">
-                                                    Chat via Messager
-                                                </Link>
-                                            </div>
-                                            <h6>Send us an email</h6>
-                                            <p className="text-500">Our team will respond promptly to your inquiries</p>
-                                            <div className="d-flex mb-2">
-                                                <img src="/assets/imgs/contact-2/icon-4.svg" alt="infinia" />
-                                                <Link className="ms-2 text-decoration-underline text-900 fs-7" href="#">
-                                                    support@infinia.com
-                                                </Link>
-                                            </div>
-                                            <div className="d-flex mb-2 mb-5">
-                                                <img src="/assets/imgs/contact-2/icon-4.svg" alt="infinia" />
-                                                <Link className="ms-2 text-decoration-underline text-900 fs-7" href="#">
-                                                    sale@infinia.com
-                                                </Link>
-                                            </div>
-                                            <h6>For more inquiry</h6>
-                                            <p className="text-500">Reach out for immediate assistance</p>
-                                            <div className="d-flex mb-2">
-                                                <img src="/assets/imgs/contact-2/icon-5.svg" alt="infinia" />
-                                                <Link className="ms-2 text-decoration-underline text-900 fs-7" href="tel:+0124568900">
-                                                    +01 (24) 568 900
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <Newsletter1 />
             </Layout>
         </>
     );

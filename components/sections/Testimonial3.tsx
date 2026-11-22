@@ -2,7 +2,7 @@
 import { Autoplay, Keyboard, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-export default function Testimonial3() {
+export default function Testimonial3({ style }: { style?: React.CSSProperties }) {
 
 	const swiperOptions = {
 		slidesPerView: 3,
@@ -43,7 +43,7 @@ export default function Testimonial3() {
 		<>
 
 
-			<section className="section-testimonial-3 position-relative section-padding fix">
+			<section className="section-testimonial-3 position-relative section-padding fix" style={style}>
 				<div className="container position-relative z-1">
 					<div className="row pb-9">
 						<div className="col-lg-7 mx-lg-auto">

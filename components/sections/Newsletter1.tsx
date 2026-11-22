@@ -2,7 +2,7 @@ import BouncingBlobsWrapper from "@/components/elements/BouncingBlobsWrapper";
 export default function Newsletter1() {
     return (
         <>
-            <section className="section-newsletter-1 pb-120 pt-120 fix position-relative">
+            <section className="section-newsletter-1 pb-120 fix position-relative">
                 <div className="container position-relative fix">
                     <div className="row align-items-center fix text-center border rounded-4 position-relative z-1">
                         <div className="col-lg-6 my-4">

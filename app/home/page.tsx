@@ -17,7 +17,7 @@ export default function Home3() {
 	return (
 		<>
 
-			<Layout headerStyle={3} footerStyle={2}>
+			<Layout footerStyle={2}>
 
 				<Hero3 />
 				<LogoCloud3 />

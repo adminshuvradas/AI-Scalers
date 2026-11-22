@@ -2,11 +2,9 @@ import Link from "next/link";
 
 const companyLinks = [
     { label: "Mission & Vision", href: "/about-us" },
-    { label: "Our Team", href: "/team" },
     { label: "Careers", href: "#" },
     { label: "Press & Media", href: "#" },
     { label: "Advertising", href: "#" },
-    { label: "Testimonials", href: "#" },
 ];
 
 const resourceLinks = [
@@ -145,19 +143,13 @@ export default function Footer1() {
                                     </p>
                                     <div className="d-flex">
                                         <Link
-                                            href="#"
+                                            href="/privacy-policy"
                                             className="text-white me-3"
                                         >
                                             Privacy policy
                                         </Link>
-                                        <Link
-                                            href="#"
-                                            className="text-white me-3"
-                                        >
-                                            Cookies
-                                        </Link>
-                                        <Link href="#" className="text-white">
-                                            Terms of service
+                                        <Link href="/terms-conditions" className="text-white">
+                                            Terms &amp; Conditions
                                         </Link>
                                     </div>
                                 </div>

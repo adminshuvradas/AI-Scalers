@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import BouncingBlobsWrapper from "@/components/elements/BouncingBlobsWrapper";
 import Layout from "@/components/layout/Layout";
 import ServiceQuestions from "@/components/sections/ServiceQuestions";
-import ServiceContactForm from "@/components/sections/ServiceContactForm";
+import Newsletter1 from "@/components/sections/Newsletter1";
 import { services } from "@/util/services";
 
 interface ServicePageProps {
@@ -26,71 +25,16 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
 	return (
 		<Layout>
-			<section className="section-page-header py-10 fix position-relative">
+			<section className="section-services-details pt-80px pb-120 position-relative fix" style={{ paddingTop: "160px" }}>
 				<div className="container position-relative z-1">
-					<div className="text-start">
-						<h3>{service.title}</h3>
-						<div className="d-flex align-items-center">
-							<Link href="/">
-								<p className="mb-0 text-900">Home</p>
-							</Link>
-							<svg
-								className="mx-3"
-								xmlns="http://www.w3.org/2000/svg"
-								width={8}
-								height={13}
-								viewBox="0 0 8 13"
-								fill="none"
-							>
-								<path
-									className="stroke-dark"
-									d="M1 1.5L6.5 6.75L1 12"
-									stroke="#111827"
-									strokeWidth="1.5"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-								/>
-							</svg>
-							<Link href="/services">
-								<p className="mb-0 text-900">Services</p>
-							</Link>
-							<svg
-								className="mx-3"
-								xmlns="http://www.w3.org/2000/svg"
-								width={8}
-								height={13}
-								viewBox="0 0 8 13"
-								fill="none"
-							>
-								<path
-									className="stroke-dark"
-									d="M1 1.5L6.5 6.75L1 12"
-									stroke="#111827"
-									strokeWidth="1.5"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-								/>
-							</svg>
-							<p className="text-primary mb-0">Service Details</p>
+					<div className="text-center">
+						<div className="d-flex align-items-center justify-content-center bg-primary-soft d-inline-flex rounded-pill border border-2 border-white px-4 py-2">
+							<img src="/assets/imgs/features-1/dots.png" alt="infinia" />
+							<span className="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-uppercase">
+								Service Information
+							</span>
 						</div>
 					</div>
-				</div>
-				<img
-					className="position-absolute bottom-0 start-0 end-0 top-0 z-0"
-					src="/assets/imgs/page-header/bg-line.png"
-					alt=""
-				/>
-				<div className="bouncing-blobs-container">
-					<div className="bouncing-blobs-glass" />
-					<BouncingBlobsWrapper className="bouncing-blobs">
-						<div className="bouncing-blob bouncing-blob--green" />
-						<div className="bouncing-blob bouncing-blob--primary" />
-					</BouncingBlobsWrapper>
-				</div>
-			</section>
-
-			<section className="section-services-details pt-80px pb-120">
-				<div className="container">
 					<div className="row pt-8">
 						<div className="col-lg-8 ps-lg-4 mt-lg-0 mt-8 content">
 							<img
@@ -210,61 +154,14 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 						</aside>
 					</div>
 				</div>
+				<div className="position-absolute top-0 start-50 translate-middle-x z-0">
+					<img src="/assets/imgs/service-2/bg-line.png" alt="infinia" />
+				</div>
+				<div className="rotate-center ellipse-rotate-success position-absolute z-0" />
+				<div className="rotate-center-rev ellipse-rotate-primary position-absolute z-1" />
 			</section>
 
-			<section className="section-contact-2 position-relative section-padding bg-5">
-				<div className="container position-relative z-1">
-					<div className="text-center">
-						<h2 className="ds-5 mt-3 mb-3">
-							Thinking about a project?
-							<br className="d-md-block d-none" /> Get in touch with us.
-						</h2>
-						<p className="fs-5 fw-medium">
-							Ask us about {service.title} and how we can help your business.
-						</p>
-					</div>
-					<div className="row mt-8">
-						<div className="col-lg-10 mx-lg-auto">
-							<div className="row">
-								<div className="col-lg-6 ps-lg-0 pb-5 pb-lg-0">
-									<h4>Leave a message</h4>
-									<ServiceContactForm
-										serviceTitle={service.title}
-										messageRequired
-									/>
-								</div>
-								<div className="col-lg-6">
-									<div className="ps-lg-6">
-										<h5>Chat with us</h5>
-										<p className="text-500">
-											Our team is ready to talk through your service needs.
-										</p>
-										<div className="d-flex align-items-center mb-3">
-											<img
-												src="/assets/imgs/contact-2/icon-4.svg"
-												alt=""
-											/>
-											<a
-												className="ms-2 text-decoration-underline text-900 fs-7"
-												href="mailto:contact@infinia.com"
-											>
-												contact@infinia.com
-											</a>
-										</div>
-										<h5 className="mt-5">For more inquiry</h5>
-										<p className="text-500">
-											Reach out to discuss {service.title.toLowerCase()}.
-										</p>
-										<Link href="/contact" className="btn btn-outline-secondary">
-											Visit our contact page
-										</Link>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+			<Newsletter1 />
 		</Layout>
 	);
 }

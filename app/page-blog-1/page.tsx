@@ -6,7 +6,10 @@ export default function PageBlog1() {
         <>
             <Layout>
                 {/*Blog 5*/}
-                <section className="section-blog-1 section-padding position-relative border-top border-bottom">
+                <section className="section-blog-1 section-padding position-relative border-top border-bottom overflow-hidden">
+                    <div className="position-absolute top-0 start-50 translate-middle-x z-0">
+                        <img src="/assets/imgs/service-2/bg-line.png" alt="infinia" />
+                    </div>
                     <div className="container position-relative z-2">
                         <div className="row align-items-end">
                             <div className="col-lg-7 me-auto">
@@ -78,12 +81,8 @@ export default function PageBlog1() {
                             </div>
                         </div>
                     </div>
-                    <div className="bouncing-blobs-container">
-                        <div className="bouncing-blobs-glass" />
-                        <BouncingBlobsWrapper className="bouncing-blobs">
-                            <div className="bouncing-blob bouncing-blob--infor bouncing-blob--infor-2" />
-                        </BouncingBlobsWrapper>
-                    </div>
+                    <div className="rotate-center ellipse-rotate-success position-absolute z-0" />
+                    <div className="rotate-center-rev ellipse-rotate-primary position-absolute z-1" />
                 </section>
                 {/*Blog 6*/}
                 <section className="section-blog-6 section-padding border-bottom">
