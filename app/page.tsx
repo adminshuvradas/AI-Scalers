@@ -1,33 +1,33 @@
-import Blog3 from "@/components/sections/Blog3"
-import Cta2 from "@/components/sections/Cta2"
-import Cta3 from "@/components/sections/Cta3"
-import Faqs2 from "@/components/sections/Faqs2"
-import Features6 from "@/components/sections/Features6"
-import Features7 from "@/components/sections/Features7"
-import Hero3 from "@/components/sections/Hero3"
-import LogoCloud3 from "@/components/sections/LogoCloud3"
-import Newsletter2 from "@/components/sections/Newsletter2"
-import Pricing3 from "@/components/sections/Pricing3"
-import Services2 from "@/components/sections/Services2"
-import Static2 from "@/components/sections/Static2"
+import Blog from "@/components/sections/Blog"
+import CtaPrimary from "@/components/sections/CtaPrimary"
+import CtaSecondary from "@/components/sections/CtaSecondary"
+import Faqs from "@/components/sections/Faqs"
+import FeaturesPrimary from "@/components/sections/FeaturesPrimary"
+import FeaturesSecondary from "@/components/sections/FeaturesSecondary"
+import Hero from "@/components/sections/Hero"
+import LogoCloud from "@/components/sections/LogoCloud"
+import Newsletter from "@/components/sections/Newsletter"
+import Pricing from "@/components/sections/Pricing"
+import Services from "@/components/sections/Services"
+import Static from "@/components/sections/Static"
 
 import Layout from "@/components/layout/Layout"
 
 export default function Home() {
   return (
-    <Layout footerStyle={2} topBarColor="#6d4df2">
-      <Hero3 />
-      <LogoCloud3 />
-      <Services2 />
-      <Cta2 />
-      <Static2 />
-      <Cta3 />
-      <Features6 />
-      <Features7 />
-      <Pricing3 />
-      <Faqs2 />
-      <Blog3 />
-      <Newsletter2 />
+    <Layout footerStyle={2}>
+      <Hero />
+      <LogoCloud />
+      <Services />
+      <CtaPrimary />
+      <Static />
+      <CtaSecondary />
+      <FeaturesPrimary />
+      <FeaturesSecondary />
+      <Pricing />
+      <Faqs />
+      <Blog />
+      <Newsletter />
     </Layout>
   )
 }

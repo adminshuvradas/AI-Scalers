@@ -1,21 +1,16 @@
 "use client";
 import AOS from "aos";
-import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import BackToTop from "../elements/BackToTop";
-import Breadcrumb from "./Breadcrumb";
-import Footer1 from "./footer/Footer1";
-import Header3 from "./header/Header3";
+import Footer from "./footer/Footer";
+import Header from "./header/Header";
 
 interface LayoutProps {
     footerStyle?: Number;
     children?: React.ReactNode;
-    breadcrumbTitle?: string;
-    topBarColor?: string;
 }
 
-export default function Layout({ footerStyle, breadcrumbTitle, topBarColor, children }: LayoutProps) {
-    const activeTopBarColor = topBarColor ?? "#6d4df2";
+export default function Layout({ footerStyle, children }: LayoutProps) {
     const [scroll, setScroll] = useState<boolean>(false);
     // Mobile Menu
     const [isMobileMenu, setMobileMenu] = useState<boolean>(false);
@@ -27,10 +22,6 @@ export default function Layout({ footerStyle, breadcrumbTitle, topBarColor, chil
     // Search
     const [isSearch, setSearch] = useState<boolean>(false);
     const handleSearch = (): void => setSearch(!isSearch);
-
-    // OffCanvas
-    const [isOffCanvas, setOffCanvas] = useState<boolean>(false);
-    const handleOffCanvas = (): void => setOffCanvas(!isOffCanvas);
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -85,15 +76,13 @@ export default function Layout({ footerStyle, breadcrumbTitle, topBarColor, chil
     return (
         <>
             <div id="top" />
-            <Header3 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} isSearch={isSearch} handleSearch={handleSearch} isOffCanvas={isOffCanvas} handleOffCanvas={handleOffCanvas} topBarColor={activeTopBarColor} />
+            <Header scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} isSearch={isSearch} handleSearch={handleSearch} />
 
             <main>
-                {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
-
                 {children}
             </main>
 
-            <Footer1 />
+            <Footer />
 
             <BackToTop target="#top" />
         </>

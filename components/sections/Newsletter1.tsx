@@ -1,4 +1,6 @@
 import BouncingBlobsWrapper from "@/components/elements/BouncingBlobsWrapper";
+import NewsletterForm from "@/components/sections/NewsletterForm";
+
 export default function Newsletter1() {
     return (
         <>
@@ -41,14 +43,12 @@ export default function Newsletter1() {
                                 <span className="fs-6 fw-medium" data-aos="fade-zoom-in" data-aos-delay={200}>
                                     Join 52,000+ people on our newsletter
                                 </span>
-                                <div className="input-group mb-3 mt-4 position-relative">
-                                    <input type="text" className="ps-5 py-3 form-control bg-neutral-100 rounded-start-pill border-2 border-end-0 border-white" name="name" placeholder="Enter your mail .." />
-                                    <div className="bg-neutral-100 border-2 border border-start-0 border-white rounded-end-pill">
-                                        <button className="btn btn-gradient px-3 py-3 m-3 fs-7 fw-bold border-0 rounded-pill" type="button" data-aos="fade-zoom-in" data-aos-delay={100}>
-                                            Join Now
-                                        </button>
-                                    </div>
-                                </div>
+                                <NewsletterForm
+                                    formClassName="input-group mb-3 mt-4 position-relative"
+                                    inputClassName="ps-5 py-3 form-control bg-neutral-100 rounded-start-pill border-2 border-end-0 border-white"
+                                    buttonContainerClassName="bg-neutral-100 border-2 border border-start-0 border-white rounded-end-pill"
+                                    buttonClassName="btn btn-gradient px-3 py-3 m-3 fs-7 fw-bold border-0 rounded-pill"
+                                />
                             </div>
                         </div>
                     </div>

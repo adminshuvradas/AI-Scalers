@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Layout from "@/components/layout/Layout";
 import Newsletter1 from "@/components/sections/Newsletter1";
+import BlogCommentForm from "@/components/sections/BlogCommentForm";
 import { blogPosts } from "@/util/blog-posts";
 
 interface BlogDetailProps {
@@ -98,44 +99,7 @@ export default async function BlogDetails({ params }: BlogDetailProps) {
 								</div>
 							</div>
 							<h2 className="h3 mt-7 mb-4 pb-4 border-bottom">Leave a comment</h2>
-							<form action="#">
-								<div className="row g-3">
-									<div className="col-md-6">
-										<input
-											className="form-control"
-											type="text"
-											name="name"
-											placeholder="Your name *"
-											aria-label="Your name"
-											required
-										/>
-									</div>
-									<div className="col-md-6">
-										<input
-											className="form-control"
-											type="email"
-											name="email"
-											placeholder="Email address *"
-											aria-label="Email address"
-											required
-										/>
-									</div>
-									<div className="col-12">
-										<textarea
-											className="form-control pb-10"
-											name="comment"
-											placeholder="Write your comment"
-											aria-label="Write your comment"
-											required
-										/>
-									</div>
-									<div className="col-12">
-										<button type="submit" className="btn btn-primary mt-3">
-											Send Message
-										</button>
-									</div>
-								</div>
-							</form>
+							<BlogCommentForm postTitle={post.title} />
 						</div>
 					</div>
 				</div>

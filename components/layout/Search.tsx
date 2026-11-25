@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
-import blogPosts from "@/util/blog.json";
+import { blogPosts } from "@/util/blog-posts";
 
 interface SearchResult {
 	href: string;
@@ -22,13 +23,10 @@ const pages: SearchResult[] = [
 	{ href: "/team", title: "Team", description: "Meet our team" },
 	{ href: "/blog", title: "Blog", description: "Latest articles and news" },
 	{ href: "/contact", title: "Contact", description: "Get in touch with us" },
-	{ href: "/page-pricing-01", title: "Pricing", description: "Plans and pricing" },
-	{ href: "/page-features-1", title: "Features", description: "Explore our features" },
 ];
 
-const suggestions = ["About", "Services", "Team", "Tech", "Gaming", "Pricing"];
-
 export default function Search({ isSearch, handleSearch }: SearchProps) {
+	const router = useRouter();
 	const [query, setQuery] = useState("");
 	const normalizedQuery = query.trim().toLocaleLowerCase();
 	const results: SearchResult[] = normalizedQuery
@@ -50,6 +48,9 @@ export default function Search({ isSearch, handleSearch }: SearchProps) {
 
 	const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
+		if (!results.length) {
+			router.push("/404");
+		}
 	};
 
 	return (
@@ -79,7 +80,7 @@ export default function Search({ isSearch, handleSearch }: SearchProps) {
 									</svg>
 								</button>
 							</form>
-							{normalizedQuery ? (
+							{normalizedQuery && (
 								<div className="mt-4" aria-live="polite">
 									{results.length ? (
 										<ul className="list-unstyled mb-0">
@@ -95,22 +96,6 @@ export default function Search({ isSearch, handleSearch }: SearchProps) {
 									) : (
 										<p className="text-500 mb-0">No results found for “{query.trim()}”.</p>
 									)}
-								</div>
-							) : (
-								<div className="d-flex flex-column flex-lg-row mt-5">
-									<h6 className="d-inline me-2">Suggest:</h6>
-									<div className="d-flex flex-wrap gap-2">
-										{suggestions.map((suggestion) => (
-											<button
-												key={suggestion}
-												type="button"
-												className="btn btn-link p-0"
-												onClick={() => setQuery(suggestion)}
-											>
-												{suggestion}
-											</button>
-										))}
-									</div>
 								</div>
 							)}
 						</div>
