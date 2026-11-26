@@ -54,9 +54,9 @@ export default async function PageBlog({ searchParams }: PageBlogProps) {
                                 <div className="card-team position-relative d-flex flex-lg-row flex-column align-items-center rounded-3 border  card-hover shadow-2 mb-lg-0 mb-8">
                                     <img className="rounded rounded-bottom-0 rounded-start-lg rounded-end-lg-0 w-100 w-lg-auto" src="/assets/imgs/blog-5/img-1.png" alt="infinia" />
                                     <div className="bg-white align-self-stretch rounded rounded-start-lg-0 p-5">
-                                        <Link href="#" className="z-1 position-relative bg-primary-soft border border-2 border-white d-inline-flex rounded-pill px-3 py-1 mb-2">
+                                        <span className="z-1 position-relative bg-primary-soft border border-2 border-white d-inline-flex rounded-pill px-3 py-1 mb-2">
                                             <span className="tag-spacing fs-7 fw-bold text-linear-2 text-uppercase">business</span>
-                                        </Link>
+                                        </span>
                                         <h6 className="mb-3">The Future of SaaS: Emerging Trends to Watch</h6>
                                         <p>As the SaaS industry continues to evolve, new trends are shaping the future of software delivery and consumption...</p>
                                         <div className="d-flex align-items-center justify-content-between mt-5 pt-5 border-top">
@@ -118,11 +118,16 @@ export default async function PageBlog({ searchParams }: PageBlogProps) {
                                 <div className="col-lg-4 col-md-6 text-start" key={post.id}>
                                     <Link
                                         href={`/blog/${post.id}`}
-                                        className="card border-0 rounded-3 mt-4 position-relative d-inline-flex text-decoration-none"
+                                        className="card border-0 rounded-3 mt-4 position-relative d-flex flex-column h-100 w-100 text-decoration-none"
                                     >
-                                        <img className="rounded-top-3" src={post.image} alt={post.title} />
-                                        <div className="card-body bg-white p-0">
-                                            <span className="bg-primary-soft position-relative z-1 d-inline-flex rounded-pill px-3 py-2 mt-3">
+                                        <img
+                                            className="rounded-top-3 w-100"
+                                            src={post.image}
+                                            alt={post.title}
+                                            style={{ aspectRatio: "1 / 1", objectFit: "cover", maxWidth: "420px" }}
+                                        />
+                                        <div className="card-body bg-white p-0 d-flex flex-column flex-grow-1">
+                                            <span className="position-relative z-1 bg-primary-soft border border-2 border-white d-inline-flex align-self-start rounded-pill px-3 py-2 mt-3">
                                                 <span className="tag-spacing fs-7 fw-bold text-linear-2 text-uppercase">{post.category}</span>
                                             </span>
                                             <h6 className="my-3">{post.title}</h6>

@@ -56,7 +56,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 											<div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3 mb-4">
 												<div className="icon">
 													<img
-														src={`/assets/imgs/services-details/icon-${index + 5}.svg`}
+														src={`/assets/imgs/service-2/icon-${index + 1}.svg`}
 														alt=""
 													/>
 												</div>

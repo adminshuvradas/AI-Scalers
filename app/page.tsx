@@ -21,9 +21,9 @@ export default function Home() {
       <Services />
       <CtaPrimary />
       <Static />
+      <FeaturesSecondary />
       <CtaSecondary />
       <FeaturesPrimary />
-      <FeaturesSecondary />
       <Pricing />
       <Faqs />
       <Blog />

@@ -240,6 +240,18 @@ const featuredPosts: BlogPost[] = [
 	},
 ];
 
+const archiveImages = [
+	"/assets/imgs/blog-3/img-1.png",
+	"/assets/imgs/blog-3/img-2.png",
+	"/assets/imgs/blog-3/img-3.png",
+	"/assets/imgs/blog-3/img-4.png",
+	"/assets/imgs/blog-5/img-1.png",
+	"/assets/imgs/blog-5/img-2.png",
+	"/assets/imgs/blog-5/img-3.png",
+	"/assets/imgs/blog-6/img-2.png",
+	"/assets/imgs/blog-6/img-5.png",
+];
+
 const archivePosts: BlogPost[] = blogData.map((post, index) => {
 	const summary = `Explore ${post.title.toLowerCase()} and the ideas behind it. This article offers a starting point for understanding the topic and considering how it relates to your interests.`;
 
@@ -250,7 +262,7 @@ const archivePosts: BlogPost[] = blogData.map((post, index) => {
 		category: post.category,
 		author: post.author,
 		date: post.date,
-		image: `/assets/imgs/blog-6/img-${(index % 7) + 1}.png`,
+		image: archiveImages[index % archiveImages.length],
 		readingTime: "5 mins to read",
 		intro: summary,
 		sections: [
